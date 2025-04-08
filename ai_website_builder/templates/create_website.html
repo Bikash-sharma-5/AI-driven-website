@@ -1,0 +1,8 @@
+<h2>Create Website</h2>
+<form method="post">
+    {% csrf_token %}
+    <input type="text" name="name" placeholder="Website Name">
+    <input type="text" name="business_type" placeholder="Business Type">
+    <input type="text" name="industry" placeholder="Industry">
+    <button type="submit">Generate</button>
+</form>

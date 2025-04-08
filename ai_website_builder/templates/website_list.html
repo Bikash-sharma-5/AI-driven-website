@@ -1,0 +1,9 @@
+<h2>Your Websites</h2>
+<ul>
+    {% for website in websites %}
+        <li>
+            {{ website.name }} - 
+            <a href="{{ website.get_preview_url }}">Preview</a>
+        </li>
+    {% endfor %}
+</ul>
